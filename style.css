@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(242, 239, 248);
+}
+h1 {
+  color: rgb(65, 61, 68);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1px;
+}
+
+.main button {
+  width: 200px;
+  border: none;
+  height: 40px;
+  background: rgb(211, 218, 238);
+  background: linear-gradient(
+    111deg,
+    rgba(211, 218, 238, 1) 0%,
+    rgba(191, 168, 236, 1) 50%,
+    rgba(161, 135, 237, 1) 100%
+  );
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 1px;
+  padding-bottom: 0;
+}
+
+.main .basic:hover,
+.main .prof:hover,
+.main .master:hover {
+  width: 300px;
+  height: 370px;
+  padding: 30px;
+  gap: 20px;
+  transition: 0.8s ease;
+  background: rgba(161, 135, 237, 1);
+  color: white;
+}
+.main p {
+  width: 100%;
+  border-bottom: 1px solid;
+  border-color: rgb(198, 207, 207);
+}
+.main .basic,
+.main .prof,
+.main .master {
+  padding: 30px;
+  gap: 20px;
+  color: rgb(65, 61, 68);
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  width: 300px;
+  height: 340px;
+  border-radius: 3px;
+  display: flex;
+  text-align: center;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+  border: none;
+}
+
+@media (max-width: 425px) {
+  .main {
+    flex-direction: column;
+    overflow: auto;
+    gap: 10px;
+  }
+}
